@@ -1,8 +1,9 @@
 import requests
 from datetime import datetime
+import config
 
-nutritionix_app_id = '40903e6f'
-nutritionix_api_key = '1da813da5fd2d2996f110797cafbca8b'
+nutritionix_app_id = config.nutritionix_app_id
+nutritionix_api_key = config.nutritionix_api_key
 
 sheety_url = 'https://api.sheety.co/5fcf9dc404a75c0dc69f46f5bb0151b0/workoutTracking/workouts'
 
@@ -14,7 +15,7 @@ nutritionix_headers = {
 }
 
 sheety_aut = {
-    'Authorization': 'Bearer #asdasdsafwerrfjdhbsfyugrgueDBADSAFGH'
+    'Authorization': config.sheety_bearer_token
 }
 
 nutritionix_params = {
